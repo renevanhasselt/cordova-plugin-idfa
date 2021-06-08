@@ -26,6 +26,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                 <param name="ios-package" value="IdfaPlugin" />
             </feature>
         </config-file>
+         <config-file target="*-Info.plist" parent="NSUserTrackingUsageDescription">
+            <string>We use your data to improve your app experience.</string>
+        </config-file>  
 
         <header-file src="src/ios/IdfaPlugin.h" />
         <source-file src="src/ios/IdfaPlugin.m" />
